@@ -18,16 +18,36 @@
   </head>
   <body>
     <!--My Dairy-->
-     <section id="login">
-       <div class="container">
-         <h1>MyDiary</h1>
-         <form action="entry.html"> 
-             <input type="text" placeholder="Enter your username / email">
-             <input type="password" placeholder="Enter your password">
-             <button type="submit" class="button">login</button>
-         </form>
-       </div>
-
-     </section>
+    
+        <div id="heading" class="container">
+            <h1>MyDiary</h1>
+            <p>Welcome to the digital diary! </p>
+        </div>
+        <section class="container">
+          <div id="intro" >
+            <p>You can now have your own public or private free personal
+             online diary on the Internet at MyDiary!</p>
+          </div>
+          <div id="login">
+            <form  action="entry.html">
+                <p>
+                <label ><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                </p><p>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="passw" required>
+                </p>
+                <p><input type="checkbox" checked="checked" name="remember">Remember me
+                  <br>
+               <button class="buttonball" type="submit">Login</button>
+               </p>
+            
+        
+            </form>
+         </div>
+    </section>
+    <footer>
+        <p>MyDiary, Copyright &copy; 2018 </p>
+      </footer>
   </body>
 </html>

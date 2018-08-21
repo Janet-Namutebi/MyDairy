@@ -9,11 +9,11 @@
     <!--define the keywords in the site-->
     <meta name="keywords" content="entries">
     <!--author of the site -->
-    <meta name="author" content="Jnaet Namutebi">
+    <meta name="author" content="Janet Namutebi">
 
     <title>MyDiary | welcome</title>
     <!--connect css-->
-    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/style.css">
 
   </head>
   <body>
@@ -21,12 +21,13 @@
      <header>
        <div class="container">
          <div id="brandname">
-           <h1><span class="highlight">My</span> Diary</h1>
+           <h1>MyDiary</h1>
+           <p>Your Online diary! </p>
          </div>
          <nav>
            <ul>
              <li class="current"><a href="entry.html">Home</a></li>
-             <li><a href="userprofile.html">accountname</a></li>
+             <li><a href="#">My Account</a></li>
            </ul>
          </nav>
        </div>
@@ -36,14 +37,29 @@
        <div class="container">
          <!--list of entries-->
          <div class="entry">
-           <h3>My Entries</h3>
-         </div>
-         <!--display content in selected entry -->
-         <div class="entry">
-           <h3>Display Entry Content</h3>
+           <table>
+             <thead>
+             <th colspan="2">My Entries</th>
+             </thead>
+             <tr>
+               <td>Monday</td><td>August 20, 2018</td>
+             </tr>
+             <tr>
+              <td>Sunday</td><td>August 20, 2018</td>
+            </tr>
+            <tr>
+              <td>Saturday</td><td>August 20, 2018</td>
+              </tr>
+              <tr>
+                <td>Friday</td><td>August 20, 2018</td>
+              </tr>
+           </table>
          </div>
        </div>
 
      </section>
+     <footer>
+       <p>MyDiary, Copyright &copy; 2018 </p>
+     </footer>
   </body>
 </html>
