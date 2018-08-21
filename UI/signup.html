@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--define responsiveness of the site-->
+    <meta name="viewport" content="width=device-width">
+    <!--define description of the site-->
+    <meta name="description" content="My Dairy">
+    <!--define the keywords in the site-->
+    <meta name="keywords" content="entries">
+    <!--author of the site -->
+    <meta name="author" content="Janet Namutebi">
+
+    <title>MyDiary | welcome</title>
+    <!--connect css-->
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  <body>
+    <!--My Dairy-->
+    
+        <div id="heading" class="container">
+            <h1>MyDiary</h1>
+            <p>Welcome to the digital diary! </p>
+        </div>
+        <section class="container">
+          <div id="intro" >
+            <p>If You already have an account with MyDiary!</p>
+             <p>Please <a href="index.html">login</a> To continue,</p>
+          </div>
+          <div id="login">
+            
+            <form  action="index.html">
+                 <p><b>First name</b>
+                    <br><input type="text" placeholder="first name" name="firstname" required></p>
+
+                <p><b>Last name</b>
+                    <br><input type="text" placeholder="last name" name="lastname" required></p>
+
+                <p><b>Gender</b>
+                    <select>
+                            <option name="gender" value="female">Female</option>
+                            <option name="gender" value="male">Male</option>
+                 </select>
+                </p>
+                <p><b>Email</b>
+                    <br><input type="text" placeholder="email@domain.com" name="email" required></p>
+
+                <p><b>Password</b>
+                    <br><input type="password" placeholder="Enter Password" name="passw" required></p>
+
+                <p><b>Confirm password</b>
+                    <br><input type="password" placeholder="Re-enter Password" name="passw" required></p>
+                 <p>
+                <button class="buttonball" type="submit">SignUp</button></p> 
+            </form>
+         </div>
+    </section>
+    <footer>
+        <p>MyDiary, Copyright &copy; 2018 </p>
+      </footer>
+  </body>
+</html>
