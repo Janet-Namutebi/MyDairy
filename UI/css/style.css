@@ -20,9 +20,10 @@ body{
     height: 30px;
     background: rgb(78, 71, 29);
     border: none;
-    padding: 0 20px 0 20px;
+    padding: 15px 20px 15px 20px;
     color: rgb(252, 251, 247);
     border-radius: 20px;
+    
   }
   
   /*header*/
@@ -64,10 +65,11 @@ body{
     font-weight: bold;
   }
   table {
-    width: 80%;
+    width: 100%;
     background-color: rgb(231, 216, 129);
   }
   .entry {
+    margin-bottom: 70px;
     text-align: center;
     width: 100%;
     padding: 20px;
@@ -97,9 +99,10 @@ body{
   }
   #intro {
     float: left;
-    margin-left: 100px;
-    padding: 20px 15px 20px 15px;
-    width: 20%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 20px 10px 20px 10px;
+    min-width: 50%;
     background: rgb(161, 147, 67);
     
   }
@@ -112,9 +115,10 @@ body{
   }
   #login {
     float: right;
-    margin: 0px 40px 40px 40px;
-    padding: 20px 15px 40px 15px;
-    width: 50%;
+    margin-right: 5px;
+    margin-bottom: 60px;
+    padding: 20px 10px 20px 10px;
+    min-width: 50%;
     background: rgb(161, 147, 67);
     text-align: center;
   }
