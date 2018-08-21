@@ -1,141 +1,159 @@
 body{
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color:#f4f4f4;
-    background: url('../images/diary.jpg') no-repeat;
-  }
-  /*global*/
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  /*ul*/
-  ul{
-    margin: 0;
-    padding: 0;
-  }
-  .buttonball{
-    height: 30px;
-    background: rgb(78, 71, 29);
-    border: none;
-    padding: 15px 20px 15px 20px;
-    color: rgb(252, 251, 247);
-    border-radius: 20px;
-    
-  }
-  
-  /*header*/
-  header {
-    background: #ffffff;
-    color: rgb(78, 71, 29);
-    padding-top: 30px;
-    min-height: 100px;
-    /*border-bottom: #084B8A 3px solid;*/
-  }
-  header a{
-    color: rgb(78, 71, 29);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 16px;
-  }
-  
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  header #brandname {
-    float: left;
-  }
-  header #brandname h1 {
-    font-size: 45px;
-    font-weight: 20px;
-  }
-  header nav {
-    float: right;
-    margin-top: 10px;
-  }
-  header .highlight, header .current a {
-    font-weight: 10px;
-  }
-  header a:hover {
-    color:#cccccc;
-    font-weight: bold;
-  }
-  table {
-    width: 100%;
-    background-color: rgb(231, 216, 129);
-  }
-  .entry {
-    margin-bottom: 70px;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-  }
-.entry table tr{
-  background: rgb(230, 211, 104);
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
-  height: 60px;
-  width: 300px;
+  margin: 0;
+  background-color:#f4f4f4;
+  background: url('../images/diary.jpg') no-repeat;
+}
+/*global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/*ul*/
+ul{
+  margin: 0;
+  padding: 0;
+}
+.buttonball{
+  height: 30px;
+  background: rgb(78, 71, 29);
+  border: none;
+  padding: 15px 20px 15px 20px;
+  color: rgb(252, 251, 247);
+  border-radius: 20px;
+  
+}
+
+/*header*/
+header {
+  background: #ffffff;
+  color: rgb(78, 71, 29);
+  padding-top: 30px;
+  min-height: 100px;
+  /*border-bottom: #084B8A 3px solid;*/
+}
+header a{
+  color: rgb(78, 71, 29);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #brandname {
+  float: left;
+}
+header #brandname h1 {
+  font-size: 45px;
+  font-weight: 20px;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+header .highlight, header .current a {
+  font-weight: 10px;
+}
+header a:hover {
+  color:#cccccc;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  background-color: rgb(231, 216, 129);
+}
+.entry {
+  margin-bottom: 70px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+.entry table tr{
+background: rgb(230, 211, 104);
+padding: 0;
+height: 60px;
+width: 300px;
 }
 .entry table thead th{
-  background: rgb(148, 132, 43);
+background: rgb(148, 132, 43);
 }
-  #heading{
-    min-height: 100px;
-    text-align: center;
-    
-  }
-  #heading h1 {
-    margin-top: 50px;
-    font-size: 60px;
-    color: rgb(78, 71, 29);
-    margin-bottom: 10px;
-  }
-  #heading p {
-    font-size: 30px;
-  }
+#heading{
+  min-height: 100px;
+  text-align: center;
+  
+}
+#heading h1 {
+  margin-top: 50px;
+  font-size: 60px;
+  color: rgb(78, 71, 29);
+  margin-bottom: 10px;
+}
+#heading p {
+  font-size: 30px;
+}
+#intro {
+  float: left;
+  margin-bottom: 10px;
+  padding: 20px 10px 20px 10px;
+  width: 40%;
+  background: rgb(161, 147, 67);
+  
+}
+#intro p {
+  font-size: 20px;
+}
+#intro a {
+  color: rgb(248, 247, 242);
+  text-decoration: none;
+}
+#login {
+  float: right;
+  margin-bottom: 60px;
+  padding: 20px 10px 20px 10px;
+  width: 50%;
+  background: rgb(161, 147, 67);
+  text-align: center;
+}
+#login input {
+  padding: 3px;
+  height: 20px;
+  width: 250px;
+}
+footer {
+position: fixed;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+padding: 10px;
+margin-top: 1px;
+color: #ffffff;
+background: rgb(78, 71, 20);
+text-align: center;
+}
+@media (max-width: 600px){
   #intro {
     float: left;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-bottom: 10px;
     padding: 20px 10px 20px 10px;
-    min-width: 50%;
+    min-width: 80%;
     background: rgb(161, 147, 67);
     
-  }
-  #intro p {
-    font-size: 20px;
-  }
-  #intro a {
-    color: rgb(248, 247, 242);
-    text-decoration: none;
   }
   #login {
     float: right;
-    margin-right: 5px;
+    margin-right: 15px;
     margin-bottom: 60px;
     padding: 20px 10px 20px 10px;
-    min-width: 50%;
+    min-width: 80%;
     background: rgb(161, 147, 67);
     text-align: center;
   }
-  #login input {
-    padding: 3px;
-    height: 20px;
-    width: 250px;
-  }
-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  margin-top: 1px;
-  color: #ffffff;
-  background: rgb(78, 71, 20);
-  text-align: center;
 }
