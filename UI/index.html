@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!--define responsiveness of the site-->
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
     <!--define description of the site-->
     <meta name="description" content="My Dairy">
     <!--define the keywords in the site-->
@@ -26,19 +26,21 @@
         <section class="container">
           <div id="intro" >
             <p>You can now have your own public or private free personal
-             online diary on the Internet at MyDiary!</p>
+             online diary on the Internet at MyDiary!<br>
+            To Get started,<a href="signup.html">SignUp</a></p>
           </div>
           <div id="login">
+            
             <form  action="entry.html">
                 <p>
-                <label ><b>Username</b></label>
+                <label ><b>Username</b></label><br>
                 <input type="text" placeholder="Enter Username" name="username" required>
                 </p><p>
-                <label><b>Password</b></label>
+                <label><b>Password</b></label><br>
                 <input type="password" placeholder="Enter Password" name="passw" required>
                 </p>
-                <p><input type="checkbox" checked="checked" name="remember">Remember me
-                  <br>
+                <p><input type="checkbox" checked="checked" name="remember">Keep me logged in</p>
+                
                <button class="buttonball" type="submit">Login</button>
                </p>
             

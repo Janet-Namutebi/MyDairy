@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!--define responsiveness of the site-->
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
     <!--define description of the site-->
     <meta name="description" content="My Dairy">
     <!--define the keywords in the site-->
@@ -14,6 +14,7 @@
     <title>MyDiary | welcome</title>
     <!--connect css-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
@@ -28,6 +29,7 @@
            <ul>
              <li class="current"><a href="entry.html">Home</a></li>
              <li><a href="#">My Account</a></li>
+             <li><a href="index.html">Logout</a></li>
            </ul>
          </nav>
        </div>
@@ -37,21 +39,26 @@
        <div class="container">
          <!--list of entries-->
          <div class="entry">
-           <table>
+            <button class="buttonball" style="font-size:13px;float: left;"><i class="fa fa-file"></i>Add New Entry</button>
+           <table border="0">
              <thead>
-             <th colspan="2">My Entries</th>
+             <th colspan="3">My Entries</th>
              </thead>
              <tr>
                <td>Monday</td><td>August 20, 2018</td>
+               <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
              </tr>
              <tr>
               <td>Sunday</td><td>August 20, 2018</td>
+              <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
             </tr>
             <tr>
               <td>Saturday</td><td>August 20, 2018</td>
+              <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
               </tr>
               <tr>
                 <td>Friday</td><td>August 20, 2018</td>
+                <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
               </tr>
            </table>
          </div>
