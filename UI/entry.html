@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <!--icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--script to display entries of different months and years-->
+    
     <script type="text/javascript">
+      //function to display entries of different months and years-->
        function selectmonth(nameselect){
          console.log(nameselect);
          var msg = document.getElementById("p1");
@@ -54,6 +55,11 @@
          }
 
          }
+       }
+       //function to display entry popup
+       function dairyentry() {
+         var entryform = document.getElementById("entrypop");
+         entryform.style.display ="block";
        }
       </script>
   </head>
@@ -93,10 +99,19 @@
              </select> </p>
 
              <!--add new entry-->
-          <button class="buttonball" style="font-size:13px;float: left;"><i class="fa fa-file"></i>Add New Entry</button>
+          <button class="buttonball" onclick="dairyentry()" style="font-size:13px;float: left;"><i class="fa fa-file"></i>Add New Entry</button>
+          <div id="entrypop" style="display:none">
+            <form action="entry.html">
+                <p><input type="text" placeholder="Title"></p>
+                <p><input type="text" placeholder="Enter content"></p>
+                <p><input type="date" placeholder="select date"></p>
+                <p><button type="submit">add entry</button></p>
+              
+            </form>
+          </div>
            
            <!--display of entries-->
-          <div id="aug">
+          <div id="aug"><!--august entries-->
            <table border="0">
              <thead>
              <th colspan="3">My Entries</th>
@@ -119,6 +134,7 @@
               </tr>
            </table>
            </div>
+           <!--july entries-->
            <div id="july" style="display:none">
            <table border="0">
               <thead>
@@ -142,6 +158,7 @@
                </tr>
             </table>
             </div>
+            <!--june entries-->
             <div id="june" style="display:none">
                 <table border="0">
                    <thead>
@@ -165,11 +182,13 @@
                     </tr>
                  </table>
                  </div>
+              <!--message for months with no entries-->
             <p id="p1" style="display:none">No entries for this selected month, please select another month</p>
-         </div>
-       </div>
+         </div> <!--entry-->
+       </div> <!--container-->
 
      </section>
+     <!--footer-->
      <footer>
        <p>MyDiary, Copyright &copy; 2018 </p>
      </footer>

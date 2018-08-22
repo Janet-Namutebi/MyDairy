@@ -125,6 +125,19 @@ background: rgb(148, 132, 43);
   height: 20px;
   width: 250px;
 }
+#entrypop {
+  float: auto;
+  margin-bottom: 60px;
+  padding: 20px 10px 20px 10px;
+  width: 30%;
+  background: rgb(175, 161, 82);
+  text-align: center;
+}
+#entrypop input {
+  padding: 3px;
+  height: 20px;
+  width: 250px;
+}
 footer {
 position: fixed;
 left: 0;
