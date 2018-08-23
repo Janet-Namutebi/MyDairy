@@ -59,27 +59,34 @@
        //function to display entry popup
        function dairyentry() {
          var entryform = document.getElementById("entrypop");
-         entryform.style.display ="block";
+         var displayentry = entryform.style.display ="block";
        }
       </script>
   </head>
   <body>
     <!--body header-->
-     <header>
-       <div class="container">
-         <div id="brandname">
-           <h1>MyDiary</h1>
-           <p>Your Online diary! </p>
-         </div>
-         <nav>
-           <ul>
-             <li class="current"><a href="entry.html">Home</a></li>
-             <li><a href="#">My Account</a></li>
-             <li><a href="index.html">Logout</a></li>
-           </ul>
-         </nav>
-       </div>
-     </header>
+    <header>
+      <div class="container">
+        <div id="brandname">
+          <h1>MyDiary</h1>
+          <p>Your Online diary! </p>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="entry.html">Home</a></li>
+            <div class="dropnav">
+              <button class="dropbtn">My Account 
+                  <i class="fa fa-caret-down" style="font-size:20px;color:rgb(78, 71, 29);"></i>
+                </button>
+                <div class="dropnav-content">
+                  <li><a href="userprofile.html">Profile</a></li>
+                  <li><a href="index.html">Logout</a></li>
+                </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!--My Dairy-->
      <section id="entries">
        <div class="container">
@@ -102,9 +109,9 @@
           <button class="buttonball" onclick="dairyentry()" style="font-size:13px;float: left;"><i class="fa fa-file"></i>Add New Entry</button>
           <div id="entrypop" style="display:none">
             <form action="entry.html">
-                <p><input type="text" placeholder="Title"></p>
-                <p><input type="text" placeholder="Enter content"></p>
-                <p><input type="date" placeholder="select date"></p>
+                <p><input type="text" required="required" placeholder="Title"></p>
+                <p><input type="text" required="required" placeholder="Enter content"></p>
+                <p><input type="date" required="required" placeholder="select date"></p>
                 <p><button type="submit">add entry</button></p>
               
             </form>
