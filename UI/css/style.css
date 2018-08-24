@@ -42,6 +42,7 @@ header a{
 }
 
 header li {
+  float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
@@ -61,11 +62,13 @@ header #brandname p {
 header nav {
   float: right;
   margin-top: 10px;
+  display: inline;
 }
 
 header a:hover {
   color:#cccccc;
   font-weight: bold;
+  
 }
 table {
   width: 100%;
@@ -274,8 +277,4 @@ text-align: center;
   float: right;
   margin: 0 20px 0 0;
 }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 014856eff2852ef025e1b67342cad5ff81d5ea4e
