@@ -14,32 +14,111 @@
     <title>MyDiary | welcome</title>
     <!--connect css-->
     <link rel="stylesheet" href="./css/style.css">
+    <!--icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript">
+      //function to display entries of different months and years-->
+       function selectmonth(nameselect){
+         console.log(nameselect);
+         var msg = document.getElementById("p1");
+         if(nameselect){
+            augoption = document.getElementById("augmonth").value;
+            junoption = document.getElementById("junmonth").value;
+            juloption = document.getElementById("julmonth").value;
+          
+            if(augoption == nameselect.value){
+             document.getElementById("aug").style.display ="block";
+             document.getElementById("june").style.display ="none";
+             document.getElementById("july").style.display ="none";
+             msg.style.display = "none";
+             }
 
+            else if(junoption == nameselect.value){
+             document.getElementById("june").style.display ="block";
+             document.getElementById("aug").style.display ="none";
+             document.getElementById("july").style.display ="none";
+             msg.style.display = "none";
+            }
+            
+            else if(juloption == nameselect.value){
+             document.getElementById("july").style.display ="block";
+             document.getElementById("aug").style.display ="none";   
+             document.getElementById("june").style.display ="none";
+             msg.style.display = "none";
+           }
+         else{
+          document.getElementById("aug").style.display ="none";
+          document.getElementById("june").style.display ="none";
+          document.getElementById("july").style.display ="none";
+          msg.style.display = "block";
+         }
+
+         }
+       }
+       //function to display entry popup
+       function dairyentry() {
+         var entryform = document.getElementById("entrypop");
+         var displayentry = entryform.style.display ="block";
+       }
+      </script>
   </head>
   <body>
     <!--body header-->
-     <header>
-       <div class="container">
-         <div id="brandname">
-           <h1>MyDiary</h1>
-           <p>Your Online diary! </p>
-         </div>
-         <nav>
-           <ul>
-             <li class="current"><a href="entry.html">Home</a></li>
-             <li><a href="#">My Account</a></li>
-             <li><a href="index.html">Logout</a></li>
-           </ul>
-         </nav>
-       </div>
-     </header>
+    <header>
+      <div class="container">
+        <div id="brandname">
+          <h1>MyDiary</h1>
+          <p>Your Online diary! </p>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="entry.html">Home</a></li>
+            <div class="dropnav">
+              <button class="dropbtn">My Account 
+                  <i class="fa fa-caret-down" style="font-size:20px;color:rgb(78, 71, 29);"></i>
+                </button>
+                <div class="dropnav-content">
+                  <li><a href="userprofile.html">Profile</a></li>
+                  <li><a href="index.html">Logout</a></li>
+                </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!--My Dairy-->
      <section id="entries">
        <div class="container">
          <!--list of entries-->
          <div class="entry">
-            <button class="buttonball" style="font-size:13px;float: left;"><i class="fa fa-file"></i>Add New Entry</button>
+           <!--select month-->
+            <P><label>Select month </label>
+             <select id="month" onchange="selectmonth(this);">
+               <option id="augmonth" value="august">August 2018</option>
+               <option id="julmonth" value="july">July 2018</option>
+               <option id="junmonth" value="june">June 2018</option>
+               <option value="may">May 2018</option>
+               <option value="april">April 2018</option>
+               <option value="mar">March 2018</option>
+               <option value="feb">Febuary 2018</option>
+               <option value="jan">January 2018</option>
+             </select> </p>
+
+             <!--add new entry-->
+          <button class="buttonball" onclick="dairyentry()" style="font-size:13px;float: left;"><i class="fa fa-file"></i>Add New Entry</button>
+          <div id="entrypop" style="display:none">
+            <form action="entry.html">
+                <p><input type="text" required="required" placeholder="Title"></p>
+                <p><input type="text" required="required" placeholder="Enter content"></p>
+                <p><input type="date" required="required" placeholder="select date"></p>
+                <p><button type="submit">add entry</button></p>
+              
+            </form>
+          </div>
+           
+           <!--display of entries-->
+          <div id="aug"><!--august entries-->
            <table border="0">
              <thead>
              <th colspan="3">My Entries</th>
@@ -49,24 +128,77 @@
                <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
              </tr>
              <tr>
-              <td>Sunday</td><td>August 20, 2018</td>
+              <td>Sunday</td><td>August 19, 2018</td>
               <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
             </tr>
             <tr>
-              <td>Saturday</td><td>August 20, 2018</td>
+              <td>Saturday</td><td>August 18, 2018</td>
               <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
               </tr>
               <tr>
-                <td>Friday</td><td>August 20, 2018</td>
+                <td>Friday</td><td>August 17, 2018</td>
                 <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
               </tr>
            </table>
-         </div>
-       </div>
+           </div>
+           <!--july entries-->
+           <div id="july" style="display:none">
+           <table border="0">
+              <thead>
+              <th colspan="3">My Entries</th>
+              </thead>
+              <tr>
+                <td>Monday</td><td>July 20, 2018</td>
+                <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+              </tr>
+              <tr>
+               <td>Sunday</td><td>July 19, 2018</td>
+               <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+             </tr>
+             <tr>
+               <td>Saturday</td><td>July 18, 2018</td>
+               <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+               </tr>
+               <tr>
+                 <td>Friday</td><td>July 17, 2018</td>
+                 <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+               </tr>
+            </table>
+            </div>
+            <!--june entries-->
+            <div id="june" style="display:none">
+                <table border="0">
+                   <thead>
+                   <th colspan="3">My Entries</th>
+                   </thead>
+                   <tr>
+                     <td>Monday</td><td>June 20, 2018</td>
+                     <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+                   </tr>
+                   <tr>
+                    <td>Sunday</td><td>June 19, 2018</td>
+                    <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td><td>June 18, 2018</td>
+                    <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td><td>June 17, 2018</td>
+                      <td><button class="buttonball">Delete</button> <button class="buttonball">Edit</button></td>
+                    </tr>
+                 </table>
+                 </div>
+              <!--message for months with no entries-->
+            <p id="p1" style="display:none">No entries for this selected month, please select another month</p>
+         </div> <!--entry-->
+       </div> <!--container-->
 
      </section>
+     <!--footer-->
      <footer>
        <p>MyDiary, Copyright &copy; 2018 </p>
      </footer>
+     
   </body>
 </html>
