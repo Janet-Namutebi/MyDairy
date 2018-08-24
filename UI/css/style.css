@@ -50,8 +50,14 @@ header #brandname {
   float: left;
 }
 header #brandname h1 {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 20px;
+  margin-bottom: 0;
+}
+header #brandname p {
+  font-size: 15px;
+  font-family: serif;
+  margin-top: 0;
 }
 header nav {
   float: right;
@@ -65,6 +71,12 @@ header a:hover {
 table {
   width: 100%;
   background-color: rgb(231, 216, 129);
+  border-collapse: collapse;
+  
+}
+table tr {
+  border: 1px solid white;
+  border-radius: 20%;
 }
 .dropnav {
   float: auto;
@@ -84,7 +96,6 @@ table {
 
 .dropnav-content {
   display: none;
-  position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -104,12 +115,20 @@ table {
 .dropnav-content a:hover {
   background-color: #ddd;
   color: black;
+  display: block;
 }
 
 .dropnav:hover .dropnav-content {
-  display: inline;
+  display: block;
 }
-
+#p1 {
+  float: auto;
+  padding: 50px 20px 0 100px;
+  font-size: 15px;
+  font-family: serif;
+  text-align: center;
+  color: rgb(117, 4, 4);
+}
 
 .entry {
   margin-bottom: 70px;
@@ -126,19 +145,30 @@ width: 300px;
 .entry table thead th{
 background: rgb(148, 132, 43);
 }
+.entry p {
+  color: rgb(148, 132, 43);
+}
+.entry select{
+  color: rgb(148, 132, 43);
+}
+.selmonth{
+  float: right;
+  margin: 0 200px 0 0;
+}
 #heading{
   min-height: 100px;
   text-align: center;
-  
+  color: rgb(78, 71, 20);
 }
 #heading h1 {
-  margin-top: 50px;
-  font-size: 60px;
-  color: rgb(78, 71, 29);
-  margin-bottom: 10px;
+  font-size: 70px;
+  font-weight: 20px;
+  margin-bottom: 0;
 }
 #heading p {
-  font-size: 30px;
+  font-size: 15px;
+  font-family: serif;
+  margin-top: 0;
 }
 #intro {
   float: left;
@@ -146,6 +176,7 @@ background: rgb(148, 132, 43);
   padding: 20px 10px 20px 10px;
   width: 40%;
   background: rgb(161, 147, 67);
+  border-radius: 15%;
   
 }
 #intro p {
@@ -162,6 +193,7 @@ background: rgb(148, 132, 43);
   width: 50%;
   background: rgb(161, 147, 67);
   text-align: center;
+  border-radius: 15%;
 }
 #login input {
   padding: 3px;
@@ -172,17 +204,17 @@ background: rgb(148, 132, 43);
   float: left;
   text-align: center;
   background: rgb(175, 161, 82);
-  margin: 0 10px 75px 120px;
-  width: 40%;
-  padding: 10px 0 0 0;
+  margin: 0 0 90px 0;
+  padding: 20px 10px 20px 10px;
+  width: 50%;
   border-radius: 20%;
 }
 .set {
   float: right;
   background: rgb(175, 161, 82);
-  margin: 5px 120px 5px 10px;
-  padding: 10px 5px 10px;
-  width: 30%;
+  margin: 0 0 5px 0;
+  padding: 20px 10px 20px 10px;
+  width: 40%;
   border-radius: 20%;
 }
 #entrypop {
@@ -229,4 +261,22 @@ text-align: center;
     background: rgb(161, 147, 67);
     text-align: center;
   }
+
+.card {
+  float: left;
+  text-align: center;
+  background: rgb(175, 161, 82);
+  margin: 0 50px 60px 0;
+  min-width: 100%;
+  padding: 20px 0 20px 0;
+  border-radius: 20%;
+}
+.set {
+  float: right;
+  background: rgb(175, 161, 82);
+  margin: 5px 15px 60px 10px;
+  padding: 20px 10px 20px 10px;
+  min-width: 80%;
+  border-radius: 20%;
+}
 }
