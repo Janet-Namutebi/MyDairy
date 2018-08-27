@@ -162,6 +162,7 @@ background: rgb(148, 132, 43);
   padding: 3px;
   min-width: 10%; 
 }
+
 #heading{
   min-height: 100px;
   text-align: center;
@@ -180,6 +181,7 @@ background: rgb(148, 132, 43);
 }
 #intro {
   float: left;
+  font-family: 'Courgette', cursive;
   margin-bottom: 10px;
   padding: 20px 10px 20px 10px;
   width: 40%;
@@ -196,6 +198,7 @@ background: rgb(148, 132, 43);
 }
 #login {
   float: right;
+  font-family: 'Courgette', cursive;
   margin-bottom: 60px;
   padding: 20px 10px 20px 10px;
   width: 50%;
@@ -210,6 +213,8 @@ background: rgb(148, 132, 43);
 }
 .card {
   float: left;
+  font-family: 'Lateef', cursive;
+  font-size: 20px;
   text-align: center;
   background: rgb(175, 161, 82);
   margin: 0 10px 75px 120px;
@@ -219,6 +224,8 @@ background: rgb(148, 132, 43);
 }
 .set {
   float: right;
+  font-family: 'Lateef', cursive;
+  font-size: 20px;
   background: rgb(175, 161, 82);
   margin: 5px 120px 5px 10px;
   padding: 10px 5px 10px;
