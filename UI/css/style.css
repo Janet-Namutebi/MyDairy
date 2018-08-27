@@ -20,10 +20,10 @@ ul{
   height: 30px;
   background: rgb(78, 71, 29);
   border: none;
-  padding: 15px 20px 15px 20px;
+  padding: 5px 20px 15px 20px;
   color: rgb(252, 251, 247);
   border-radius: 20px;
-  
+  font-family: 'Courgette', cursive;
 }
 
 /*header*/
@@ -50,16 +50,18 @@ header #brandname {
   float: left;
 }
 header #brandname h1 {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: 'Great Vibes', cursive;
   font-weight: 20px;
-  margin-bottom: 0;
+  margin:0 0 0 0;
 }
 header #brandname p {
   font-size: 15px;
-  font-family: serif;
+  font-family: 'Courgette', cursive;
   margin-top: 0;
 }
 header nav {
+  font-family: 'Courgette', cursive;
   float: right;
   margin-top: 10px;
   display: inline;
@@ -72,13 +74,12 @@ header a:hover {
 }
 table {
   width: 100%;
+  font-family: 'Courgette', cursive;
   background-color: rgb(231, 216, 129);
   border-collapse: collapse;
-  
 }
 table tr {
   border: 1px solid white;
-  border-radius: 20%;
 }
 .dropnav {
   float: auto;
@@ -139,19 +140,34 @@ width: 300px;
 background: rgb(148, 132, 43);
 }
 .entry p {
-  color: rgb(148, 132, 43);
+  color: rgb(248, 247, 240);
+  font-size: 16px;
 }
 .entry select{
+  font-family: 'Courgette', cursive;
   color: rgb(148, 132, 43);
+}
+.entry #p1 {
+  float: left;
+  color: rgb(148, 43, 43);
+  font-family: 'Courgette', cursive;
+  margin: 80px 0 0 0;
 }
 .selmonth{
   float: right;
-  margin: 0 200px 0 0;
+  font-family: 'Courgette', cursive;
+  margin: 0 180px 10px 0;
+  background: rgb(119, 106, 31);
+  border-radius: 20%;
+  padding: 3px;
+  min-width: 10%; 
 }
+
 #heading{
   min-height: 100px;
   text-align: center;
   color: rgb(78, 71, 20);
+  font-family: 'Great Vibes', cursive;
 }
 #heading h1 {
   font-size: 70px;
@@ -160,11 +176,12 @@ background: rgb(148, 132, 43);
 }
 #heading p {
   font-size: 15px;
-  font-family: serif;
+  font-family: 'Courgette', cursive;
   margin-top: 0;
 }
 #intro {
   float: left;
+  font-family: 'Courgette', cursive;
   margin-bottom: 10px;
   padding: 20px 10px 20px 10px;
   width: 40%;
@@ -181,6 +198,7 @@ background: rgb(148, 132, 43);
 }
 #login {
   float: right;
+  font-family: 'Courgette', cursive;
   margin-bottom: 60px;
   padding: 20px 10px 20px 10px;
   width: 50%;
@@ -195,6 +213,8 @@ background: rgb(148, 132, 43);
 }
 .card {
   float: left;
+  font-family: 'Lateef', cursive;
+  font-size: 20px;
   text-align: center;
   background: rgb(175, 161, 82);
   margin: 0 10px 75px 120px;
@@ -204,6 +224,8 @@ background: rgb(148, 132, 43);
 }
 .set {
   float: right;
+  font-family: 'Lateef', cursive;
+  font-size: 20px;
   background: rgb(175, 161, 82);
   margin: 5px 120px 5px 10px;
   padding: 10px 5px 10px;
@@ -215,7 +237,7 @@ background: rgb(148, 132, 43);
   margin-bottom: 60px;
   padding: 20px 10px 20px 10px;
   width: 30%;
-  background: rgb(175, 161, 82);
+  background: rgb(119, 106, 31);
   text-align: center;
 }
 #entrypop input {
@@ -233,6 +255,7 @@ padding: 10px;
 margin-top: 1px;
 color: #ffffff;
 background: rgb(78, 71, 20);
+font-family: 'Courgette', cursive;
 text-align: center;
 }
 @media (max-width: 600px){
@@ -277,4 +300,6 @@ text-align: center;
   float: right;
   margin: 0 20px 0 0;
 }
+
 }
+
